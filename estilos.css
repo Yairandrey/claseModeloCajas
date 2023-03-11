@@ -1,31 +1,29 @@
 .header{
     background-color: blue;
     height: 70px;
+    grid-area:header;
 }
 .wrapper{
     max-width: 1000px;
     margin:0  auto;
+    display:grid;
+    grid-template-areas: 
+        'header header header header'
+        'menu content content contento'
+        'footer footer footer footer'  ;
 }
-.container{
-    background-color: yellow;
-    display:flex;
-    height: 60px;
-    align-items: center;
-    flex-direction: row-reverse;
-}
+
 .menu{
     background-color: aqua;
-    width: 20%;
-    text-align: center;
-
+    grid-area:menu;
 }
 
 .content{
     background-color: teal;
-    width: 80%;
-    text-align: center;
+    grid-area: content;
+
 }
 .footer{
     background-color: tomato;
-    height: 30px;
+    grid-area: footer;
 }
