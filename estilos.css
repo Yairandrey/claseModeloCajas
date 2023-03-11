@@ -8,24 +8,24 @@
 }
 .container{
     background-color: yellow;
-    overflow: hidden;
+    display:flex;
+    height: 60px;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 .menu{
     background-color: aqua;
     width: 20%;
-    float:left;
     text-align: center;
-    height: 40px;
+
 }
 
 .content{
     background-color: teal;
     width: 80%;
-    float:left;
     text-align: center;
 }
 .footer{
-    clear:both;
     background-color: tomato;
     height: 30px;
 }
